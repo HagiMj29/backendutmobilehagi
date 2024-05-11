@@ -33,5 +33,5 @@ Route::get('/galeri',[ListBudayaController::class, 'galeri']);
 
 Route::get('/sejarawan',[ListSejarawanController::class, 'index']);
 Route::post('/sejarawan', [ListSejarawanController::class, 'store']);
-Route::put('/sejarawan/{sejarawan}', [ListSejarawanController::class, 'update']);
-Route::delete('/sejarawan/{sejarawans}', [ListSejarawanController::class, 'destroy']);
+Route::post('sejarawans/{id}/update', [ListSejarawanController::class, 'update']);
+Route::delete('/sejarawan/{sejarawan}', [ListSejarawanController::class, 'destroy']);
